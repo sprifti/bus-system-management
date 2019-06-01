@@ -32,7 +32,6 @@
           zoom: 8
         });
         infoWindow = new google.maps.InfoWindow;
-
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -53,7 +52,6 @@
           handleLocationError(false, infoWindow, map.getCenter());
         }
       }
-
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
@@ -64,7 +62,7 @@
     
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARvLgntb7ww8Fo5B82QZDa55wnqhtGAro&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBThtUxHddy0bE1KSe8K4DHtgAimxHobF8&callback=initMap">
     </script>
   </body>
 </html>
